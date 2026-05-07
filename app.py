@@ -73,7 +73,7 @@ fig_temp = px.line(
     y="temperatura_c",
     title="Evolução da temperatura"
 )
-st.plotly_chart(fig_temp, width="stretch")
+st.plotly_chart(fig_temp, width="stretch", key="grafico_temperatura")
 
 fig_nivel = px.line(
     df_tratado,
@@ -81,7 +81,7 @@ fig_nivel = px.line(
     y="nivel_rio_m",
     title="Evolução do nível do rio"
 )
-st.plotly_chart(fig_nivel, width="stretch")
+st.plotly_chart(fig_nivel, width="stretch", key="grafico_nivel_rio")
 
 fig_ndvi = px.line(
     df_tratado,
@@ -89,6 +89,6 @@ fig_ndvi = px.line(
     y="ndvi",
     title="Evolução do NDVI"
 )
-st.plotly_chart(fig_ndvi, width="stretch")
-st.plotly_chart(fig_ndvi, width="stretch")
+
+st.plotly_chart(fig_ndvi, width="stretch", key="grafico_ndvi")
 st.caption("NDVI: valores entre 0.6 e 0.9 indicam vegetação típica de áreas úmidas como o Pantanal.")
