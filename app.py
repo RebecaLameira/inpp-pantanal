@@ -44,7 +44,7 @@ st.subheader("Dados originais")
 
 st.dataframe(df, width="stretch")
 
-sst.subheader("Diagnóstico de dados")
+st.subheader("Diagnóstico de dados")
 valores_ausentes = df.isnull().sum()
 st.write("Valores ausentes por coluna:")
 st.dataframe(valores_ausentes.rename("ausentes"))
