@@ -43,10 +43,13 @@ Acesse em: `http://localhost:8501`
 ---
 
 ## Estrutura do projeto
+
+```
 ├── app.py               # Aplicação principal
 ├── dados_pantanal.csv   # Dataset de exemplo
 ├── requirements.txt     # Dependências
 └── README.md
+```
 
 ## Decisões técnicas
 
