@@ -17,6 +17,15 @@ img_base64 = get_base64("bg.png")
 
 st.markdown(f"""
 <style>
+
+.voltar-link {{
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #2e7d52;
+    text-decoration: none;
+}}
+            
 .onca {{
     position: fixed;
     bottom: 10px;
@@ -28,7 +37,7 @@ st.markdown(f"""
 }}
 
 .block-container {{
-    padding-top: 2rem;
+    padding-top: 3rem;
     max-width: 1100px;
     margin: auto;
 }}
@@ -52,6 +61,11 @@ div[data-testid="metric-container"] {{
 
 <img src="data:image/png;base64,{img_base64}" class="onca">
 """, unsafe_allow_html=True)
+
+st.markdown(
+    '<a class="voltar-link" href="https://rebeca.dev.br/projects" target="_blank">← Voltar ao portfólio</a>',
+    unsafe_allow_html=True
+)
 
 st.title("🌿 Análise de Dados Ambientais do Pantanal")
 
