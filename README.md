@@ -32,10 +32,10 @@ próprio ou explorar o conjunto de dados de exemplo incluído.
 **Pré-requisitos:** Python 3.8+
 
 ```bash
-git clone https://github.com/RebecaLameira/inpp-pantanal.git
-cd inpp-pantanal
-pip install -r requirements.txt
-streamlit run app.py
+$ git clone https://github.com/RebecaLameira/inpp-pantanal.git
+$ cd inpp-pantanal
+$ pip install -r requirements.txt
+$ streamlit run app.py
 ```
 
 Acesse em: `http://localhost:8501`
