@@ -53,18 +53,11 @@ Acesse em: `http://localhost:8501`
 
 ## Decisões técnicas
 
-**Streamlit** — escolhido por permitir construir interfaces orientadas 
-a dados diretamente em Python, sem necessidade de frontend separado. 
-Adequado para protótipos e ferramentas científicas.
+**Streamlit** — escolhido por ser a opção mais direta para quem trabalha com dados em Python e precisa de uma interface funcional sem abrir mão do tempo de análise. Em vez de construir um frontend separado, o foco ficou no que importa: explorar, tratar e visualizar os dados.
 
-**Interpolação linear** — adotada para preenchimento de valores ausentes 
-por ser matematicamente apropriada para séries temporais ambientais com 
-variação gradual. Alternativas como média global ou mediana foram 
-descartadas por não preservarem a tendência temporal dos dados.
+**Interpolação linear** —  adotada para preencher os valores ausentes porque faz sentido para o tipo de dado aqui: séries temporais ambientais variam de forma gradual, então estimar um valor entre dois pontos conhecidos é mais honesto do que substituir pela média geral, que ignoraria completamente a tendência ao longo do tempo.
 
-**Plotly** — utilizado para visualização por gerar gráficos interativos 
-(zoom, hover, exportação) sem configuração adicional, aumentando a 
-usabilidade da ferramenta.
+**Plotly** — escolhido porque gráficos estáticos não são suficientes para análise exploratória. Poder passar o mouse sobre um ponto e ver a data e o valor exato faz diferença na hora de identificar variações relevantes na série, como um pico de temperatura ou uma queda no nível do rio.
 
 ---
 
